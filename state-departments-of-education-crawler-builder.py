@@ -117,11 +117,11 @@ def main():
 
     if all_results:
         keys = all_results[0].keys()
-        with open('state_departments_final.csv', 'w', newline='', encoding='utf-8') as f:
+        with open('state-departments-of-education.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=keys)
             writer.writeheader()
             writer.writerows(all_results)
-        print("Scraping complete. Files saved to /state-departments-of-education and state_departments_final.csv")
+        print("Scraping complete. Files saved to /state-departments-of-education and state-departments-of-education.csv")
 
 if __name__ == "__main__":
     main()
